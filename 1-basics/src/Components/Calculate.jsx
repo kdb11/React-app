@@ -6,5 +6,6 @@ export function Calculate() {
         <input type="text"/>
         <br />
         <button id="=">=</button>
+        <p id="result">Result</p>
     </div>
 }
