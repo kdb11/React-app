@@ -5,7 +5,7 @@ export function Calculate() {
         let y = document.getElementById("y").value;
 /*         let calc = document.getElementById("calc"); */
         let z = document.getElementById("result");
-        z.innerHTML = JSON.parse(x) + JSON.parse(y);  
+        alert(z.innerHTML = JSON.parse(x) + JSON.parse(y));  
     }
     
     return <div>
