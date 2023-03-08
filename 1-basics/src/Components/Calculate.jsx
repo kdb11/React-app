@@ -1,5 +1,6 @@
 export function Calculate() {
     return <div>
+        <form>
         <p>Add two numbers</p>
         <input type="text" />
         <p>+</p>
@@ -7,5 +8,6 @@ export function Calculate() {
         <br />
         <button id="=">=</button>
         <p id="result">Result</p>
+        </form>
     </div>
 }
