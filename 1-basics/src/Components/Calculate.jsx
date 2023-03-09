@@ -4,8 +4,10 @@ export function Calculate() {
         let x = document.getElementById("x").value;
         let y = document.getElementById("y").value;
 /*         let calc = document.getElementById("calc"); */
-        let z = document.getElementById("result");
-        alert(z.innerHTML = JSON.parse(x) + JSON.parse(y));  
+        let z = JSON.parse(x) + JSON.parse(y);
+        
+        let result = document.getElementById("result");
+        result.innerHTML = z;
     }
     
     return <div>
@@ -15,7 +17,7 @@ export function Calculate() {
         <p>+</p>
         <input id="y" type="number"/>
         <br />
-        <button id="calc" onClick={AddNumbers}>=</button>
+        <button id="calc" type="button" onClick={AddNumbers}>=</button>
         <p id="result"></p>
         </form>
     </div>
