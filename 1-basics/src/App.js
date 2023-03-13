@@ -5,16 +5,18 @@ import { Checkout } from './Components/Checkout';
 import { Movies } from './Components/Movies';
 import { Product } from './Components/Product';
 import { Products } from './Components/Products';
+import { TestState } from './Components/TestState';
 
 function App() {
   return (
     <div className="App">
-      <Calculate></Calculate>
+      {/* <Calculate></Calculate>
       <Cart></Cart>
       <Checkout></Checkout>
       <Movies></Movies>
       <Product></Product>
-      <Products></Products>
+      <Products></Products> */}
+      <TestState></TestState>
     </div>
   );
 }
