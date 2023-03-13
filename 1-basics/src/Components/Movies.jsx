@@ -18,10 +18,10 @@ export function Movies() {
         setMovies([...movies, new Movie(titel, year)]);
     };
 
-    let renderNewMovie = movies.map((Movie, i) => {
+    let renderNewMovie = movies.map((Movie, id) => {
         return (
         <>
-        <p key={i}>
+        <p key={id}>
            Movie: {Movie.titel} from {Movie.year}
         </p>
         </>
