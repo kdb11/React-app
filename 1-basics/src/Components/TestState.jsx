@@ -11,6 +11,6 @@ export function TestState() {
     return <div>
         <p>Usestate</p>
         <input type="text" placeholder="name" onChange={HandleChange} value={name}/>
-        <p>{}</p>
+        <p>{name}</p>
     </div>
 }
