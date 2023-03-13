@@ -13,10 +13,10 @@ function App() {
       {/* <Calculate></Calculate>
       <Cart></Cart>
       <Checkout></Checkout>
-      <Movies></Movies>
+      <TestState></TestState>
       <Product></Product>
       <Products></Products> */}
-      <TestState></TestState>
+      <Movies></Movies>
     </div>
   );
 }
