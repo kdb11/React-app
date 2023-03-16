@@ -1,5 +1,6 @@
 import './App.css';
 import { Calculate } from './Components/Calculate';
+import { Calculator } from './Components/Calculator';
 import { Cart } from './Components/Cart';
 import { Checkout } from './Components/Checkout';
 import { Movies } from './Components/Movies';
@@ -10,13 +11,15 @@ import { TestState } from './Components/TestState';
 function App() {
   return (
     <div className="App">
-      {/* <Calculate></Calculate>
+      {/* 
       <Cart></Cart>
       <Checkout></Checkout>
-      <TestState></TestState>
       <Product></Product>
-      <Products></Products> */}
       <Movies></Movies>
+      <Calculator></Calculator>
+      <Calculate></Calculate>
+      <Products></Products> */}
+      <TestState></TestState>
     </div>
   );
 }

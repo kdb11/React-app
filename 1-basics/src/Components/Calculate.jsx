@@ -5,7 +5,7 @@ export function Calculate() {
         let y = document.getElementById("y").value;
 /*         let calc = document.getElementById("calc"); */
         let z = JSON.parse(x) + JSON.parse(y);
-        
+
         let result = document.getElementById("result");
         result.innerHTML = z;
     }
@@ -17,7 +17,7 @@ export function Calculate() {
         <p>+</p>
         <input id="y" type="number"/>
         <br />
-        <button id="calc" type="button" onClick={AddNumbers}>=</button>
+        <button type="button" onClick={AddNumbers}>=</button>
         <p id="result"></p>
         </form>
     </div>
