@@ -6,16 +6,18 @@ export function AddProduct({ addProduct }) {
 
     const HandleChange = (e) => {
         
-        if (e.target.type ==="number")
-        SetProduct({...product, [e.target.name]: +e.target.value})
+        if (e.target.type ==="text") { 
+            SetProduct({...product, [e.target.name]: e.target.value});
+        } 
 
-        if (e.target.type ==="text")
-        SetProduct({...product, [e.target.name]: e.target.value})
-    }
+        if (e.target.type ==="number") {
+            SetProduct({...product, [e.target.name]: +e.target.value});
+        }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("product", product)
+        console.log("product", product.price.type);
         addProduct(product);
     }
 
