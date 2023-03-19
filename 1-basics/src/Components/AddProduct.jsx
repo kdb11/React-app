@@ -17,7 +17,7 @@ export function AddProduct({ addProduct }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("product", product.price.type);
+        console.log("product", product);
         addProduct(product);
     }
 
