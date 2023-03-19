@@ -1,7 +1,7 @@
-import { Item } from "./models/Item";
-
-export function Product() {
+export function Product({ product }) {
     return <div>
-        <p>Product</p>
+        <h1>{product.brand}</h1>
+        <h2>{product.description }</h2>
+        <h2>{product.price}</h2>
     </div>
 }

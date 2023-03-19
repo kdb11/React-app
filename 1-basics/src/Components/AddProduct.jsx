@@ -6,11 +6,11 @@ export function AddProduct({ addProduct }) {
 
     const HandleChange = (e) => {
         
-        if (e.target.type ==="text") { 
+        if (e.target.type === "text") { 
             SetProduct({...product, [e.target.name]: e.target.value});
         } 
 
-        if (e.target.type ==="number") {
+        if (e.target.type === "number") {
             SetProduct({...product, [e.target.name]: +e.target.value});
         }
     };
