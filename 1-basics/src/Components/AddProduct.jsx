@@ -23,11 +23,11 @@ export function AddProduct({ addProduct }) {
 
 
     return <div>
-        <form >
+        <form onSubmit={handleSubmit}>
         <input type="text" value={product.brand} placeholder="Brand" onChange={HandleChange} name="brand"/>
         <input type="text" value={product.description} placeholder="Description" onChange={HandleChange} name="description"/>
         <input type="text" value={product.price} placeholder="Price" onChange={HandleChange} name="price"/>
-        <button type="button" onClick={handleSubmit}>Save item</button>
+        <button type="submit">Save item</button>
         </form>
     </div>
 }
