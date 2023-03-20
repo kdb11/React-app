@@ -2,7 +2,7 @@ import { Item } from "./models/Item";
 import { useState } from "react";
 
 export function AddProduct({ addProduct }) {
-    const[product, SetProduct] = useState(new Item("", "", 0));
+    const[product, SetProduct] = useState(new Item("", "", ""));
 
     const HandleChange = (e) => {
         
@@ -26,7 +26,7 @@ export function AddProduct({ addProduct }) {
         <form onSubmit={handleSubmit}>
         <input type="text" value={product.brand} placeholder="Brand" onChange={HandleChange} name="brand"/>
         <input type="text" value={product.description} placeholder="Description" onChange={HandleChange} name="description"/>
-        <input type="text" value={product.price} placeholder="Price" onChange={HandleChange} name="price"/>
+        <input type="number" value={product.price} placeholder="Price" onChange={HandleChange} name="price"/>
         <button type="submit">Save item</button>
         </form>
     </div>
