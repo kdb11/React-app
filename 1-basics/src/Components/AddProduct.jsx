@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 export function AddProduct({ addProduct }) {
     const[product, SetProduct] = useState(new Item("", "", ""));
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     
     const onSubmit = (data, e) => {
         e.preventDefault();
