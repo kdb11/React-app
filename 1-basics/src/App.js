@@ -2,7 +2,7 @@ import './App.css';
 import { Calculate } from './Components/Calculate';
 import { Calculator } from './Components/Calculator';
 import { Cart } from './Components/Cart';
-import { Checkout } from './Components/Checkout';
+import { Account } from './Components/Account';
 import { Formula } from './Components/Fomula';
 import { Movies } from './Components/Movies';
 import { Product } from './Components/Product';
@@ -14,15 +14,15 @@ function App() {
     <div className="App">
       {/* 
       <Cart></Cart>
-      <Checkout></Checkout>
       <Movies></Movies>
       <Calculator></Calculator>
       <Calculate></Calculate>
       <TestState></TestState>
       <Formula></Formula>
       <Product></Product>
-       */}
       <Products></Products>
+       */}
+      <Account></Account>
       
     </div>
   );
